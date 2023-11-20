@@ -1,0 +1,376 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 1160px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #6C757D;
+}
+
+a:hover{
+  color: white;
+}
+
+
+.strip {
+  min-height: 300px;
+}
+
+.strip h1 {
+  color: #FFFFFF;
+  /* background: #0e8dbc; */
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+main {
+  min-height: 250px;
+  background: rgb(240, 240, 240);
+}
+
+main h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Rubik Moonrocks', cursive;
+}
+
+
+
+main .welcome-strip {
+  background-color: #e1e1e0;
+  }
+
+
+.card-more{
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card-more:hover{
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.card-more button{
+  min-height: inherit;
+  width: 100%;
+  background-color:#aaaaaa00;
+  border: none;
+}
+main .products-strip .card-img-top {
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+
+}
+
+
+
+main .products-strip .card-img-top .overlay-sell {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  background-color: #aaaaaa52;
+}
+
+main .products-strip .overlay-sell .text {
+  background-color: red;
+  padding: 1px 4px;
+  border-radius: 5px;
+  font-size:medium;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.modal .img{
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  min-width: 100%;
+}
+
+main .small-carousel div{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(76, 75, 75, 0.475);
+  color: black;
+}
+
+
+
+
+main .products-strip .card-img-top:hover .overlay-sell {
+  bottom: 0;
+  height: 100%;
+}
+
+
+
+
+main .small-carousel{
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+main .sell-strip {
+  min-height: 400px;
+  background-position: bottom;
+  background-size: cover;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+main .sell-strip .container {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .welcome-strip .img-box {
+  padding: 40px 40px 0px 0px;
+}
+
+main .welcome-strip .our-story {
+  padding: 80px 40px 0px 0px;
+}
+
+
+main .welcome-strip .img-box .ib {
+  min-height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0px 10px 13px -7px #000000, inset 5px 5px 16px 8px rgba(0,0,0,0);
+
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #4a48486d;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.img-box:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/* גודל מסך 992 פיקסלים רוחב ומטה */
+@media (max-width:992px) {
+  header .row nav {
+    display: none;
+    position: absolute;
+    background: rgba(74, 72, 72, 0.74);
+    width: 60%;
+    right: 0;
+    top: 48px;
+  }
+
+  header nav a {
+    color: white;
+    border: none;
+  }
+
+  header .row nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header .row nav ul li {
+    padding: 8px;
+    border-bottom: 1px solid grey;
+  }
+
+
+  header .row nav .search input {
+    max-width: 150px;
+    /* width:50%; */
+  }
+
+  header .row .burger i {
+    /* מגדיל את האייקון של הבורגר */
+    font-size: 2.5em;
+  }
+}
+
+/* עוד מדיה למסך קטן יותר אפילו */
+/* מה יקרה שהמסך קטן מ390 פיקסלים */
+@media (max-width:390px) {
+  header .row nav {
+    top: 48px;
+  }
+
+  header {
+    min-height: 80px;
+  }
+
+  header .logo {
+    width: 80%;
+  }
+
+  header .row .burger i {
+    /* מגדיל את האייקון של הבורגר */
+    font-size: 1.5em;
+  }
+
+  header .row nav .search input {
+    max-width: 100px;
+    /* width:50%; */
+  }
+
+
+}
+
+
+.bg_pic {
+  min-height: 450px;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+/* עושה שלטקסט יהיה רקע מושחר שקוף */
+.carousel-item .carousel-caption {
+  background: rgba(245, 240, 240, 0.288);
+  max-width: 500px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+.big-icon{
+  border-right: grey solid 1px;
+}
+.big-icon:hover{ 
+   border-right: grey solid 1px;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.carousel-item .card{
+  width: 23%;box-shadow: 0px 11px 21px 0px rgba(0,0,0,0.45);
+}
+
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+  @keyframes myAnim {
+    0% {
+      background-position: center ;
+      background-size: 100%;
+    }
+  
+    100% {
+      background-position: center;
+      background-size: 150%;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 766px) {
+.d-sm-flex{
+  display: flex;
+}
+
+.d-sm-none{
+  display: none;
+}
+
+.med-carousel{
+  display: none;
+}
+.text-sm-center{
+  text-align: center;
+}
+.card-more{
+  margin-top: 30px;
+}
+  }
